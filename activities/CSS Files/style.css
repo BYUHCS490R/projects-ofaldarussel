@@ -1,0 +1,41 @@
+main h1{
+    color:rgb(14, 234, 234);
+    background-color: blanchedalmond;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header p{
+    color: rgb(156, 121, 40);
+    background-color: rgb(241, 189, 229);
+    font-weight: bold;
+}
+#First {
+    color: bisque;
+    font-family: cursive;
+}
+#Second {
+    color: bisque;
+    font-family: cursive;
+}
+#Third {
+    color: bisque;
+    font-family: cursive;
+}
+#Fourth{
+    color: bisque;
+    font-family: cursive;
+}
+#Fifth {
+    color: bisque;
+    font-family: cursive;
+}
+.change {
+    color: dimgray;
+    font-family: fantasy;
+}
+.Bolder{
+    font-size: larger;
+    color: blue;
+}
