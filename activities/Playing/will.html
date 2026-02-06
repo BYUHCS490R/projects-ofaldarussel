@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Question</title>
+    <link rel="stylesheet" href="play.css">
+    <style>
+        /* This is where your CSS goes */
+        body {
+            background-color: #1a1a2e;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Keeps the page from scrolling if things grow */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .yes-button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease; /* Makes the growth look smooth */
+        }
+
+        .no-button {
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hidden-message {
+            color: #ff4d4d;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>WILL YOU MARRY ME?</h1>
+        <div class="buttons">
+            <button id="yesBtn" class="yes-button">Yes</button>
+            <button id="noBtn" class="no-button">No</button>
+        </div>
+        <p id="message" class="hidden-message">I will be very sad... 🥺</p>
+    </div>
+
+    <script>
+        // This makes the "Yes" button grow when "No" is clicked
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const message = document.getElementById('message');
+
+        let currentScale = 1;
+
+        noBtn.addEventListener('click', () => {
+            message.style.display = 'block';
+            currentScale += 0.5; // Increases size by 50% each click
+            yesBtn.style.transform = `scale(${currentScale})`;
+        });
+
+        yesBtn.addEventListener('click', () => {
+            alert("Yay! Best choice ever! ❤️");
+        });
+    </script>
+</body>
+</html>
