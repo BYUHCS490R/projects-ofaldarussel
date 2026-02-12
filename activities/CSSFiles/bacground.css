@@ -31,3 +31,7 @@ footer {
     height: 200px;
     width: 300pxx;  
 }
+main li{
+    padding-left: 20px;
+    background-color: lightcoral;
+}
