@@ -1,0 +1,30 @@
+body {
+    background-image: url("Backgroundimage1.png");
+    background-size: cover;
+    background-repeat:repeat;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0112ff;
+  padding: 10px 15px;
+}
+nav a {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+img {
+  width: 100px;
+  margin-right: 40;
+  height: auto;
+  flex-shrink: 0;
+}
