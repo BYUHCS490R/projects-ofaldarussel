@@ -86,7 +86,7 @@ div img {
 }
 
 .label{
-  color: yellow;
+  color: rgb(9, 236, 9);
 }
 .label2{
   color: thistle;
@@ -96,4 +96,10 @@ div img {
 }
 .label4{
   color: lightcoral;
+}
+.label5{
+  color: rgb(228, 16, 133);
+}
+.label6{
+  color: rgb(20, 201, 4);
 }
