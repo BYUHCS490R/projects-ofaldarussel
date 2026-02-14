@@ -7,24 +7,73 @@ nav ul {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
-  gap: 20px;
+  padding: 5;
+  gap: 10px;
+}
+nav {
+
+  display:inline-block;
 }
 
 nav a {
   text-decoration: none;
   color: #0112ff;
   padding: 10px 15px;
+  display: block;
+  border: thick rgb(249, 249, 249) solid;
+  border-radius: 5px 5px 5px;
+
 }
 nav a {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
   text-decoration: none;
 }
 
-img {
+main p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+div img {
+  width: 45vw;
+  margin-right: 40;
+  height: auto;
+  flex-shrink: 0;
+  display: inline;
+;
+}
+.igm {
   width: 100px;
   margin-right: 40;
   height: auto;
   flex-shrink: 0;
+}
+
+
+.my-list {
+  list-style: none;
+  padding-left: 0;
+}
+.this-list {
+  list-style: none;
+  padding-left: 0;
+}
+.this-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.this-list li::before {
+  content: "";
+  width: 18px;
+  height: 12px;
+  margin-right: 8px;
+  background-image: url("pinoy.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 0 0 18px;
+}
+.photo{
+  width: 45vw;
+  height: 45vw;
 }
