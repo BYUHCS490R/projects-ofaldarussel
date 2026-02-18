@@ -1,0 +1,45 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(glass.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+
+}
+header{
+    background-color: lightblue;
+    text-align: center;
+}  
+nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 5px;
+    gap: 10px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ececf2;
+    padding: 10px 15px;
+    display: block;
+    border: thin rgb(176, 10, 202) solid;
+    border-radius: 5px 5px 5px;
+}
+
+main{
+    background-color: lightgray;
+    padding: 100px;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.backgroundimg{
+    background-color: aqua;
+    padding: 20px;
+}
+
+.size img{
+    width: 100%;
+    height: auto;
+}
