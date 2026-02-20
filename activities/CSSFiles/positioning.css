@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.position{
+    width: 400px;
+    border: thin solid black;
+    
+}
+figure img{
+    width: 100%;
+    height: auto;
+}
+.floatleft{
+    float: left;
+}
+.place{
+    position: relative;
+}
+.position1{
+    position: fixed;
+    bottom: auto;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="positioning.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>  
+    <header>
+        <h1>Positioning</h1>
+    </header>
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <figure class="position floatleft">
+            <img src="position.jpg" alt="Positioning Example">
+            <figcaption>Pinoy logo</figcaption>
+        </figure>
+        <h1>Position</h1>
+        <p>Positioning is a powerful CSS property that allows you to control the layout and placement of elements on a webpage. It provides various options for positioning elements, such as static, relative, absolute, fixed, and sticky. Each of these options has its own unique behavior and use cases.</p>
+        <h2>Static Positioning</h2>    
+        <p>Static positioning is the default positioning for all elements. It means that the element will be positioned according to the normal flow of the document. Static elements are not affected by top, bottom, left, or right properties.</p>
+        <h2>Relative Positioning</h2>
+        <p>Relative positioning allows you to position an element relative to its normal position. You can use the top, bottom, left, and right properties to move the element from its original position. The space for the element is still reserved in the normal flow of the document.</p>
+        <h2>Absolute Positioning</h2>
+        <p>Absolute positioning allows you to position an element relative to its nearest positioned ancestor. If there is no positioned ancestor, it will be positioned relative to the initial containing block (usually the viewport). Absolute elements are removed from the normal flow of the document, and they do not take up space.</p>
+        <h2>Fixed Positioning</h2>
+        <p>Fixed positioning allows you to position an element relative to the viewport. The element will stay in the same position even when the page is scrolled. Fixed elements are also removed from the normal flow of the document.</p>
+        <h2>Sticky Positioning</h2>
+        <p>Sticky positioning allows you to position an element based on the user's scroll position. A sticky element toggles between relative and fixed positioning, depending on the scroll position. It is treated as relative until it crosses a specified threshold, at which point it becomes fixed.</p>
+        <ol>
+            <li>What is normal flow in HTML?
+                The normal flow is the deafult element layout of HTML where elements are position one after another in the order they appear in the HTML document.
+            </li>
+            <li>What does float do? Why do you need to clear the float?
+                The float property allows you to position an element to the left and right while alowing other element to wrap arround it.Some float need to be clearedto prevent layout issues.
+            </li>
+            <li>What do absolute, fixed, and relative do? at the TOP</li>
+            <li>How can you make nice navigation buttons for mobile devices?
+                You can use media queries to create responsive navigation buttons that adapt to different screen sizes. You can also use CSS properties like display, flexbox, or grid to create a layout that works well on mobile devices.
+            </li>
+            <li>Where can you find videos to review what we talked about in class?
+                In the lecture Notes, you can find links to videos that review the topics we discussed in class.
+            </li>
+        </ol>
+        </main>
+        <footer>
+            <p>&copy; 2026 Positioning Examples. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>
