@@ -59,9 +59,7 @@ nav ul {
     gap: 20px;
 }
 main{
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
+    
     gap: 40px;
 }
 main h1 {
@@ -89,4 +87,13 @@ footer {
 figure img{
     width: 100%;
     height: auto;
+}
+.floatleft{
+    float: left;
+    margin-right: 20px;
+}
+.position{
+    width: 400px;
+    border: thin solid black;
+    
 }
