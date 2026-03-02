@@ -1,0 +1,95 @@
+body {
+    background: #036c86;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #2f5d62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background: #098ec7;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block; 
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background: #0cdde1;
+}
+
+/*(Sidebar + Main) */
+.layout {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+aside {
+    width: 250px;
+    background: #e2e1e6;
+    padding: 15px;
+}
+
+/*  For Main Content */
+main {
+    flex: 1;
+}
+
+/* Profile Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* I did use reapeat*/
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f1f2f6;
+}
+
+/* Footer Grid*/
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.footer-grid a {
+    display: block;     
+    text-decoration: none;
+    color: blue;
+}
