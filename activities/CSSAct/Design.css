@@ -1,15 +1,6 @@
 body {
     background: #036c86;
 }
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
 /* Header */
 header {
     background: #2f5d62;
@@ -92,4 +83,7 @@ footer {
     display: block;     
     text-decoration: none;
     color: blue;
+}
+.textstyle {
+    font-family: 'Poppins', sans-serif;
 }
