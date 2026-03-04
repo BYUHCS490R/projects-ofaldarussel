@@ -1,0 +1,61 @@
+body{
+    background-color: rgba(0, 0, 255, 0.265);
+}
+header h1{
+    padding: 20px;
+    text-align: center;
+}
+nav{
+   display: flex; 
+   position: relative;
+   justify-content: space-evenly;
+
+   
+
+}
+nav a{
+    text-decoration: none;
+    color: rgb(238, 239, 247);
+    padding: 10px 10px;
+    display: inline-block;
+    border: thin rgb(148, 7, 7);
+    border-radius: 5px 5px 5px;
+
+}
+nav a:hover{
+    background-color: lightgray;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0%;
+    padding: 40px 40px;
+    gap: 20px;
+}
+.card{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    background-image: url(Venom.jpg);
+}
+.card img{
+    width: 100%;
+}
+.card a {
+    display: block;
+    padding: 3px 5px;
+    background-color: rgba(9, 64, 9, 0.811);
+    color: white;
+    margin: 5px;
+
+}
+.card p{
+    font-family: inherit;
+    color: white;
+}
+.card h2{
+    padding: 5px;
+    font-size: large;
+    color: white;
+    font-family: 'Orbitron','sans-serif';
+}
