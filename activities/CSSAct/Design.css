@@ -87,3 +87,34 @@ footer {
 .textstyle {
     font-family: 'Poppins', sans-serif;
 }
+
+
+@media ONLY screen AND ( max-width:600px){
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        border-bottom: #0cdde1;
+    }
+    aside {
+        width: 100%;
+    }
+    .card{
+        width: 95%;
+    }
+    .card-container{
+        
+        flex-flow: nowrap;
+        flex-direction: column-reverse;
+    }
+    .layout{
+        flex-flow: nowrap;
+        align-items: start;
+    }
+}
+
+
+
+@media print {
+    
+}
