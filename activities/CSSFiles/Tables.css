@@ -1,0 +1,23 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    padding: 20px;
+    text-align: center;
+    background-color: brown;
+}
+nav{
+    display: block;
+    border: 20px;
+    padding: 20px;
+}
+nav a{
+    padding: 20px 20px;
+    text-align: center;
+    display: inline-block
+
+}
+nav a:hover{
+    color: blue;
+    background-color: chartreuse;
+}
