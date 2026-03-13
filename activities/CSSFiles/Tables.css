@@ -4,20 +4,44 @@ body{
 header{
     padding: 20px;
     text-align: center;
-    background-color: brown;
+    background-color: rgb(196, 121, 121);
 }
 nav{
     display: block;
     border: 20px;
     padding: 20px;
+    background-color: rgb(142, 242, 242);
 }
 nav a{
+    border-radius: 5px 5px 5px;
+    justify-content: space-between;
+    background-color: rgb(231, 155, 247);
     padding: 20px 20px;
     text-align: center;
     display: inline-block
-
 }
 nav a:hover{
     color: blue;
     background-color: chartreuse;
+}
+.intro::first-letter{
+    font-size: larger;
+    color: blue;
+    font-weight: bolder;
+}
+table{
+    border-collapse: collapse;
+   /* width: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td{
+    border: 1px solid #333;
+    padding: 10x;
+    
+    
+}
+th{
+    background-color: rgb(255, 109, 214);
+    padding: 20px
 }
