@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <Header>
+
+    </Header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <main>
+        <form action="formprocs.html" method="post">
+            <div>
+                <label for="frame">Name:</label>
+                <input type="text" name="Fullname" id="frame">
+            </div>
+            <div>
+                <label for="email"> Email:</label>
+                <input type="text" name="email" id ="email" placeholder="Example@mail.com">
+            </div>
+            <div>
+                <label for="password"> Password</label>
+                <input type="password" name="Password" id="password" >
+            </div>
+            <div>
+                <label for="atate">State:</label>
+                <select name="state" id="state">
+                    <option value="balnk">-----</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="CA">california</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                Gender:
+                <label><input type="radio" name="gender" value="male">Male </label>
+                <label><input type="radio" name="gender" value="female">Female </label>
+            </div>
+            
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            
+
+
+        </form>
+        <ol>
+            <li>The form tag has an "action" attribute. What does it do?
+                Action specifies the URL where the form data will be sent
+            </li>
+            <li>The form tag has a "method" attribute. What does it do?
+                specifies the HTTP method used to send the form's data to the server
+            </li>
+            <li>What is the difference between a "POST" and a "GET"?
+                Post something Changes on the server in Database.
+                Get is for search filter or sort.
+            </li>
+        </ol>
+    </main>
+    <footer>
+        <p>&copy; 2026 Form Engagement</p>
+    </footer>
+</body>
+</html>
