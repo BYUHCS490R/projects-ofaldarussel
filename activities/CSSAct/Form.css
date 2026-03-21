@@ -1,0 +1,155 @@
+/* Overall design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #000000, #021a12);
+    font-family: Arial, sans-serif;
+    color: #d9fbe8;
+}
+
+/* Header */
+#main-header {
+    background-color: #000;
+    color: #00c853;
+    text-align: center;
+    padding: 25px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #00c853;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: #020d08;
+    padding: 12px;
+    border-bottom: 1px solid #00c853;
+}
+
+.navbar a {
+    color: #00e676;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px #00e676;
+}
+
+/* Main Layout */
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+/* Form Box */
+.form-box {
+    background: rgba(0, 30, 20, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0, 255, 150, 0.3);
+    border: 1px solid #00c853;
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+/* Labels */
+.form-group label {
+    color: #00e676;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #00c853;
+    background-color: #000;
+    color: #eafff5;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    box-shadow: 0 0 8px #00e676;
+    border-color: #00e676;
+}
+
+/* Gender group */
+.gender-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: #00e676;
+}
+
+/* Submit Button */
+#submit-btn {
+    background: linear-gradient(135deg, #00c853, #009624);
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover */
+#submit-btn:hover {
+    background: linear-gradient(135deg, #00e676, #00c853);
+    box-shadow: 0 0 12px #00e676;
+    transform: scale(1.05);
+}
+
+/* Info List */
+.info-list {
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+#main-footer {
+    text-align: center;
+    background-color: #000;
+    color: #00c853;
+    padding: 15px;
+    border-top: 1px solid #00c853;
+}
+
+/* Responsive part of the form */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-box {
+        width: 90%;
+    }
+}
