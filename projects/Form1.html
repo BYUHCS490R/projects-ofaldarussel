@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Form Mark 1</title>
+    <link rel="stylesheet" href="Form1design.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Form Project</h1>
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Learn More</a>
+        </nav>
+    </header>
+
+    <main class="content-area">
+        <form class="custom-form">
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">User Information</legend>
+                
+                <div class="form-group">
+                    <label for="name" class="field-label">Full Name:</label>
+                    <input type="text" id="name" name="name" class="styled-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="field-label">Password:</label>
+                    <input type="password" id="password" name="password" class="styled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="field-label">Email Address:</label>
+                    <input type="email" id="email" name="email" class="styled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate" class="field-label">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" class="styled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="country" class="field-label">Country:</label>
+                    <select id="country" name="country" class="styled-input">
+                        <option value="usa">USA</option>
+                        <option value="philippines">Philippines</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="field-label">Newsletter:</label>
+                    <div class="selection-control">
+                        <input type="radio" id="yes" name="news" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="news" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-container">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to terms</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments" class="field-label">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" class="styled-input"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Registration</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Form Project Mark 1</p>
+    </footer>
+</body>
+</html>

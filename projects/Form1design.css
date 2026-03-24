@@ -1,0 +1,149 @@
+/* 1. Global Styles & Typography */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #ffffff; /* White */
+    color: #000000; /* Black */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Header & Footer (Styled differently per rubric) */
+.main-header {
+    background-color: #000080; /* Navy Blue */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.nav-bar {
+    margin-top: 10px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.main-footer {
+    background-color: #000000; /* Black */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* 3. Form Layout (Horizontal Alignment for Desktop) */
+.custom-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.form-fieldset {
+    border: 2px solid #000080;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.form-legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000080;
+    padding: 0 10px;
+}
+
+.form-group {
+    display: flex; /* This aligns label and input horizontally */
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.field-label {
+    width: 180px; /* Fixed width ensures all inputs start at the same spot */
+    font-weight: bold;
+    color: #000080;
+}
+
+/* 4. Styled Inputs (Unique Look) */
+.styled-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #000080;
+    border-radius: 30px; /* Rounded corners */
+    background-color: #f4f4f9;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.styled-input:focus {
+    outline: none;
+    border-color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 128, 0.2);
+}
+
+/* 5. Radio & Checkbox Alignment (Fixing misalignment) */
+.selection-control, .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* 6. Submit Button Style */
+.form-actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #000000;
+}
+
+/* 7. Media Query for Mobile (Responsive Design) */
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column; /* Stack vertically */
+        align-items: flex-start;
+    }
+
+    .field-label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .styled-input {
+        width: 100%;
+        box-sizing: border-box; /* Prevents overflow */
+    }
+
+    .submit-btn {
+        width: 100%; /* Bigger button for mobile thumbs */
+        padding: 18px;
+    }
+    
+    .form-fieldset {
+        padding: 15px;
+    }
+}
