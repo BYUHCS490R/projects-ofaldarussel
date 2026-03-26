@@ -20,7 +20,7 @@
 
     <main class="main-container">
         
-        <form action="formprocs.html" method="post" class="form-box">
+        <form action="formprocs.html" method="get" id="myform">
 
             <div class="form-group">
                 <label for="frame">Name:</label>
@@ -66,6 +66,12 @@
             <li>How does flex help for both Desktop and Mobile phones?
                 -Flexbox helps by making layouts responsive. It allows elements to be side by side on desktop and stacked on mobile, improving layout and usability.
             </li>
+            <li>What is JavaScript? How did it get its name?
+                avaScript is a programming language used to make websites interactive. It can handle things like form validation, animations, buttons, and dynamic content.
+            </li>
+            <li>What are the two ways you can run JavaScript? JavaScript runs inside a web browser like Chrome or Edge using a script tag.</li>
+            <li>What was the most popular front-end js library? React </li>
+            <li>What is the most popular front-end js library today? React </li>
             
         </ol>
 
@@ -74,6 +80,34 @@
     <footer id="main-footer">
         <p>&copy; 2026 Form Engagement</p>
     </footer>
+    <script>
+        
+    document.getElementById("myform").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    const fullname = document.getElementById("frame").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const state = document.getElementById("state").value;
+    const gender = document.querySelector('input[name="gender"]:checked')?.value;
+
+    if (!fullname || !email){
+        alert("You need a name and email.");
+        return;
+    }
+
+    const formData = {
+        name: fullname,
+        email: email,
+        password: password,
+        state: state,
+        gender: gender
+    };
+
+    console.log(formData);
+    });
+
+    </script>
 
 </body>
 </html>
