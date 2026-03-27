@@ -19,7 +19,7 @@
     </nav>
 
     <main class="main-container">
-        
+        <div id="message"></div>
         <form action="formprocs.html" method="get" id="myform">
 
             <div class="form-group">
@@ -72,6 +72,11 @@
             <li>What are the two ways you can run JavaScript? JavaScript runs inside a web browser like Chrome or Edge using a script tag.</li>
             <li>What was the most popular front-end js library? React </li>
             <li>What is the most popular front-end js library today? React </li>
+            <li>March 27 Engagement</li>
+            <li>What is AJAX? Ajax is Asynchronous JavaScript and XML" (AJAX), a set of web development techniques used to create fast, interactive web applications that update data without reloading the page.  </li>
+            <li>Why do you put your JS Code in a separate file?
+                Keeps HTML for structure, CSS for styling, and JavaScript for behavior.
+            </li>
             
         </ol>
 
@@ -80,34 +85,8 @@
     <footer id="main-footer">
         <p>&copy; 2026 Form Engagement</p>
     </footer>
-    <script>
-        
-    document.getElementById("myform").addEventListener("submit", function(event){
-    event.preventDefault();
-
-    const fullname = document.getElementById("frame").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const state = document.getElementById("state").value;
-    const gender = document.querySelector('input[name="gender"]:checked')?.value;
-
-    if (!fullname || !email){
-        alert("You need a name and email.");
-        return;
-    }
-
-    const formData = {
-        name: fullname,
-        email: email,
-        password: password,
-        state: state,
-        gender: gender
-    };
-
-    console.log(formData);
-    });
-
-    </script>
+    <script src="form.js"> </script>
+    
 
 </body>
 </html>
