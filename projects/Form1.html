@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Form1design.css">
 </head>
 <body>
+
     <header class="main-header">
         <h1>Form Project</h1>
         <nav class="nav-bar">
@@ -17,23 +18,31 @@
     </header>
 
     <main class="content-area">
-        <form class="custom-form">
+
+        <div id="message"></div>
+
+        <form id="myform" class="custom-form">
             <fieldset class="form-fieldset">
                 <legend class="form-legend">User Information</legend>
                 
                 <div class="form-group">
                     <label for="name" class="field-label">Full Name:</label>
-                    <input type="text" id="name" name="name" class="styled-input" required>
+                    <input type="text" id="name" name="name" class="styled-input">
                 </div>
                 
                 <div class="form-group">
                     <label for="password" class="field-label">Password:</label>
-                    <input type="password" id="password" name="password" class="styled-input">
+                    <input type="password" id="password" name="password" class="styled-input" placeholder="6+ chars, 1 uppercase, 1 number, 1 special char">
                 </div>
 
                 <div class="form-group">
                     <label for="email" class="field-label">Email Address:</label>
                     <input type="email" id="email" name="email" class="styled-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="age" class="field-label">Age:</label>
+                    <input type="number" id="age" name="age" class="styled-input" placeholder="18-100">
                 </div>
 
                 <div class="form-group">
@@ -54,6 +63,7 @@
                     <div class="selection-control">
                         <input type="radio" id="yes" name="news" value="yes">
                         <label for="yes">Yes</label>
+
                         <input type="radio" id="no" name="news" value="no">
                         <label for="no">No</label>
                     </div>
@@ -74,10 +84,14 @@
                 </div>
             </fieldset>
         </form>
+
     </main>
 
     <footer class="main-footer">
         <p>&copy; 2026 Form Project Mark 1</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
