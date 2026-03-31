@@ -57,5 +57,5 @@ document.getElementById("myform").addEventListener("submit", function(event){
             }
         }
     };
-    xhr.send();
+    xhr.send(JSON.stringify(formData));
 });
