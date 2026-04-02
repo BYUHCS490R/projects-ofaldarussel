@@ -1,0 +1,104 @@
+/* GENERAL STYLES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAVIGATION */
+nav {
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* MAIN */
+main {
+    padding: 30px;
+}
+
+/* FLEX CONTAINER FOR PHOTO & TEXT */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.flex-container .text {
+    flex: 1 1 60%;
+}
+.flex-container .image {
+    flex: 1 1 35%;
+    text-align: center;
+}
+.flex-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* VIDEO */
+.video-container {
+    text-align: center;
+    margin: 30px 0;
+}
+.video-container video {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+/* PAGE COLORS */
+.home { background-color: #121212; color: gold; }
+.home nav a { color: gold; }
+
+.page1 { background-color: #1f3a5f; color: white; }
+.page2 { background-color: #2e5d50; color: white; }
+.page3 { background-color: #5a3e36; color: white; }
+.page4 { background-color: #3f4a6b; color: white; }
+.page5 { background-color: #4b5d3a; color: white; }
+
+/* TABLE */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    color: white;
+}
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+/* FORM */
+form input, form textarea, form select {
+    padding: 10px;
+    margin: 5px;
+    width: 60%;
+}
+form input[type="submit"] {
+    width: auto;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
