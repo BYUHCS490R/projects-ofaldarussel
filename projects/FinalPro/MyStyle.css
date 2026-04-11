@@ -1,0 +1,297 @@
+/* ================= BASE LAYOUT ================= */
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+}
+
+header{
+text-align:center;
+padding:20px;
+}
+
+nav{
+display:flex;
+justify-content:space-evenly;
+padding:10px;
+flex-wrap:wrap;
+}
+
+nav a{
+text-decoration:none;
+font-weight:bold;
+padding:8px;
+}
+
+nav a.active{
+border-bottom:3px solid yellow;
+}
+
+.container{
+display:flex;
+}
+
+aside{
+width:25%;
+padding:15px;
+}
+
+main{
+width:75%;
+display:flex;
+gap:20px;
+padding:15px;
+flex-wrap:wrap;
+}
+
+article{
+flex:1;
+padding:10px;
+}
+
+img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+footer{
+text-align:center;
+padding:15px;
+}
+
+/* ================= RX-78-2 (HOME) ================= */
+
+.rx78 header,
+.rx78 footer{
+background:#1e3a8a; /* blue */
+color:white;
+}
+
+.rx78 nav{
+background:#ffffff;
+}
+
+.rx78 nav a{
+color:#1e3a8a;
+}
+
+.rx78 aside{
+background:#f5f5f5;
+}
+
+.rx78 article{
+background:white;
+border:2px solid #ef4444; /* red accent */
+}
+
+/* ================= FREEDOM (HISTORY) ================= */
+
+.freedom header,
+.freedom footer{
+background:#0b3d91;
+color:white;
+}
+
+.freedom nav{
+background:#ffffff;
+}
+
+.freedom nav a{
+color:#0b3d91;
+}
+
+.freedom aside{
+background:#e0f2fe;
+}
+
+.freedom article{
+background:#ffffff;
+border:2px solid gold;
+}
+
+/* ================= BARBATOS (MOBILE SUITS) ================= */
+
+.barbatos header,
+.barbatos footer{
+background:#111827;
+color:white;
+}
+
+.barbatos nav{
+background:#b91c1c;
+}
+
+.barbatos nav a{
+color:white;
+}
+
+.barbatos aside{
+background:#1f2937;
+color:white;
+}
+
+.barbatos article{
+background:#111;
+color:white;
+border:2px solid #b91c1c;
+}
+
+/* ================= WING (CHARACTERS) ================= */
+
+.wing header,
+.wing footer{
+background:#6b21a8;
+color:white;
+}
+
+.wing nav{
+background:#ffffff;
+}
+
+.wing nav a{
+color:#6b21a8;
+}
+
+.wing aside{
+background:#f3e8ff;
+}
+
+.wing article{
+background:white;
+border:2px solid #6b21a8;
+}
+
+/* ================= UNICORN (MODELS) ================= */
+
+.unicorn header,
+.unicorn footer{
+background:#ffffff;
+color:#111;
+border-bottom:2px solid #f472b6;
+}
+
+.unicorn nav{
+background:#f9fafb;
+}
+
+.unicorn nav a{
+color:#f472b6;
+}
+
+.unicorn aside{
+background:#fdf2f8;
+}
+
+.unicorn article{
+background:white;
+border:2px solid #f472b6;
+}
+
+/* ================= ZAKU (TABLE) ================= */
+
+.zaku header,
+.zaku footer{
+background:#14532d;
+color:white;
+}
+
+.zaku nav{
+background:#166534;
+}
+
+.zaku nav a{
+color:white;
+}
+
+.zaku aside{
+background:#064e3b;
+color:white;
+}
+
+.zaku article{
+background:#052e16;
+color:white;
+border:2px solid #22c55e;
+}
+
+.zaku table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.zaku table, .zaku th, .zaku td{
+border:1px solid #ffffff;
+}
+
+.zaku th, .zaku td{
+padding:12px 10px;
+text-align:left;
+}
+
+.zaku th{
+background:#166534;
+color:white;
+}
+
+.zaku tr:nth-child(even){
+background:rgba(255,255,255,0.08);
+}
+
+/* ================= STRIKE (CONTACT) ================= */
+
+.strike header,
+.strike footer{
+background:#0f172a;
+color:white;
+}
+
+.strike nav{
+background:#1e293b;
+}
+
+.strike nav a{
+color:white;
+}
+
+.strike aside{
+background:#0b1220;
+color:white;
+}
+
+.strike article{
+background:#111827;
+color:white;
+border:2px solid #38bdf8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:800px){
+
+nav{
+flex-direction:column;
+}
+
+.container{
+flex-direction:column;
+}
+
+aside{
+width:100%;
+}
+
+main{
+width:100%;
+}
+
+nav a{
+display:block;
+padding:12px;
+margin:2px;
+background:#444;
+color:white;
+}
+
+}
